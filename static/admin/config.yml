@@ -24,4 +24,4 @@ collections:
               - {label: "Author",name: author, widget: string}
               - {label: "Author Link",name: authorLink, widget: string}
               - {label: "Author Image",name: authorImg, widget: image}
-              - {label: "Date",name: date, widget: date, date_format: 'MMM DD YYYY'}
+              - {label: "Date Published",name: date, widget: string}
