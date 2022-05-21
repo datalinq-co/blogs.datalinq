@@ -9,6 +9,8 @@ module.exports = {
       lg: '1024px',
       xl: '1280px',
       '2xl': '1536px',
+      '!md': {'raw':'(max-width: 768px)'},
+      '!lg': {'raw':'(max-width: 1024px)'},
     },
     colors: ({ colors }) => ({
       inherit: colors.inherit,
@@ -38,10 +40,7 @@ module.exports = {
       fuchsia: colors.fuchsia,
       pink: colors.pink,
       rose: colors.rose,
-      custCol1: "#eef0f7",
-      custCol2: "#ff9ec4",
-      custCol3: "#ffd07e",
-      custPrimCol: "#fff", 
+      custCol1: "#44444459",
     }),
     columns: {
       auto: 'auto',
@@ -867,6 +866,7 @@ module.exports = {
       opacity: 'opacity',
       shadow: 'box-shadow',
       transform: 'transform',
+      width: 'width',
     },
     transitionTimingFunction: {
       DEFAULT: 'cubic-bezier(0.4, 0, 0.2, 1)',
