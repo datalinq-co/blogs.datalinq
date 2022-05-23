@@ -25,3 +25,17 @@ collections:
               - {label: "Author Link",name: authorLink, widget: string}
               - {label: "Author Image",name: authorImg, widget: image}
               - {label: "Date Published",name: date, widget: string}
+      - label: "Site CMS"
+        name: site
+        file: blog_cms/site.json
+        fields:
+          - {label: "Title",name: title, widget: string}
+          - {label: "Subtitle",name: subtitle, widget: string}
+          - {label: "Navbar Button Text",name: navbarbtnText, widget: string}
+          - {label: "Navbar Button Link",name: navbarbtnLink, widget: string}
+          - label: "Navbar Links"
+            name: links
+            widget: list
+            fields:
+              - {label: "Text",name: text,widget: string}
+          - {label: Copyright Footer, name: footerText, widget: string}
