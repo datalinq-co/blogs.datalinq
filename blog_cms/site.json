@@ -5,13 +5,16 @@
   "navbarbtnLink": "#",
   "links": [
     {
-      "text": "Career"
+      "text": "Career",
+      "link": "#"
     },
     {
-      "text": "Privacy Policy"
+      "text": "Privacy Policy",
+      "link": "#"
     },
     {
-      "text": "Imprint"
+      "text": "Imprint",
+      "link": "#"
     }
   ],
   "footerText": "© 2022 Datalinq.co . All rights reserved."
