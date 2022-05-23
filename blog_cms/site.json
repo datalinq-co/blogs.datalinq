@@ -1,0 +1,18 @@
+{
+  "title": "Our Blogs",
+  "subtitle": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa libero labore natus atque, ducimus sed.",
+  "navbarbtnText": "Contact Us",
+  "navbarbtnLink": "#",
+  "links": [
+    {
+      "text": "Career"
+    },
+    {
+      "text": "Privacy Policy"
+    },
+    {
+      "text": "Imprint"
+    }
+  ],
+  "footerText": "© 2022 Datalinq.co . All rights reserved."
+}
