@@ -33,7 +33,8 @@ collections:
           - {label: "Subtitle",name: subtitle, widget: string}
           - {label: "Navbar Button Text",name: navbarbtnText, widget: string}
           - {label: "Navbar Button Link",name: navbarbtnLink, widget: string}
-          - label: "Navbar Links"
+          - {label: "Logo",name: logo, widget: image}
+          - label: "Footer Links"
             name: links
             widget: list
             fields:

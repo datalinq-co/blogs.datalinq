@@ -13,7 +13,7 @@ function Navbar() {
                             <div className='flex items-center justify-between w-full md:w-auto'>
                                 <a href='#'>
                                     <span className="sr-only">Datalinq Blog</span>
-                                    <img src='https://blog.datalinq.co/media/website/logo-2.png' alt='Datalinq Blog' className='h-10 w-auto sm:h-12' />
+                                    <img src={site.logo} alt='Datalinq Blog' className='h-10 w-auto sm:h-12' />
                                 </a>
                             </div>
                         </div>
