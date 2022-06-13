@@ -1,7 +1,7 @@
 import React from 'react'
 import posts from '../../blog_cms/posts.json'
 
-function PageHeader() {
+function PageHeader({author, authorImg, date}) {
   return (
     <header className='mt-14 mb-8'>
                                 <div className='flex items-start justify-between'>
@@ -9,7 +9,7 @@ function PageHeader() {
                                         <div className='mr-4 block'>
                                             <a href='#' className='m-0 p-0'>
                                                 <div className='relative'>
-                                                    <img className='w-12 h-12 rounded-full' src={posts.post[0].authorImg} alt={posts.post[0].author} />
+                                                    <img className='w-12 h-12 rounded-full' src={authorImg} alt={author} />
                                                 </div>
                                             </a>
                                         </div>
@@ -19,7 +19,7 @@ function PageHeader() {
                                                     <div>
                                                         <div className='inline-block'>
                                                             <a href='#' className='m-0 p-0'>
-                                                                {posts.post.at(0).author}
+                                                                {author}
                                                             </a>
                                                         </div>
                                                     </div>
@@ -27,7 +27,7 @@ function PageHeader() {
                                             </div>
                                             <div className='flex items-center flex-wrap'>
                                                 <p className='text-sm font-normal' style={{ color: 'rgba(117,117,117,1)', fontFamily: 'sohne, "Helvetica Neue", Helvetica, Arial, sans-serif' }}>
-                                                    {posts.post.at(0).date}
+                                                    {date}
                                                 </p>
                                             </div>
                                         </div>
