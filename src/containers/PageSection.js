@@ -10,8 +10,6 @@ function PageSection({title, description, image}) {
            <img className='max-w-full w-full h-auto' src={image} alt='Blog Image' />
            <figcaption className='mt-3 max-w-3xl mx-auto text-sm text-center font-normal' style={{color: 'rgba(117,117,117,1)', fontFamily: 'sohne, "Helvetica Neue", Helvetica, Arial, sans-serif' }}>1.1 Figure 1</figcaption>
        </figure>
-       <p className='text-xl' style={{fontFamily: 'fell, Georgia, Cambria, "Times New Roman", Times, serif', color: 'rgba(41,41,41,1)', marginTop: '2em'}}>When I used to camp in Ontario as a Boy Scout, the night was alive with crickets, and when we were up further north, the occasional howl of a wolf or scream of a fox. When I talk to scientists who have worked in rainforests, they shall talk of the cry of birds, each to each, the chatter of monkeys, and the thrum of insects in the moist air.</p>
-       <p className='text-xl' style={{fontFamily: 'fell, Georgia, Cambria, "Times New Roman", Times, serif', color: 'rgba(41,41,41,1)', marginTop: '2em'}}>When I used to camp in Ontario as a Boy Scout, the night was alive with crickets, and when we were up further north, the occasional howl of a wolf or scream of a fox. When I talk to scientists who have worked in rainforests, they shall talk of the cry of birds, each to each, the chatter of monkeys, and the thrum of insects in the moist air.</p>
    </section>
   )
 }

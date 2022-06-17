@@ -1,4 +1,5 @@
 ---
+slug: blog2
 title: How to use search engine optimization to drive sales
 description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit
   facilis asperiores porro quaerat doloribus, eveniet dolore. Adipisci tempora

@@ -1,8 +1,28 @@
 import React from 'react'
-import posts from '../../blog_cms/posts.json'
 import site from '../../blog_cms/site.json'
+import { graphql, Link, useStaticQuery } from "gatsby"
 
-function HeroSection() {
+export default function HeroSection() {
+  const data = useStaticQuery(graphql`
+  query blogQuery {
+    allMarkdownRemark {
+    nodes {
+      frontmatter {
+        slug
+        title
+        description
+        author
+        authorImg
+        authorIn
+        date
+        image
+      }
+      id
+    }
+  }
+  }
+  `)
+  const posts = data.allMarkdownRemark.nodes
   return (
     <div className="relative bg-gray-50 pt-16 pb-20 px-4 sm:px-6 lg:pt-24 lg:pb-28 lg:px-8">
       <div className="absolute inset-0">
@@ -17,33 +37,33 @@ function HeroSection() {
         </div>
         <div className="mt-12 max-w-lg mx-auto grid gap-5 lg:grid-cols-3 lg:max-w-none">
           {
-            posts.post.map((ele) => (
-              <div key={ele.title} className='flex flex-col rounded-lg shadow-lg overflow-hidden'>
+            posts.map((ele) => (
+              <div key={ele.id} className='flex flex-col rounded-lg shadow-lg overflow-hidden'>
                 <div className="flex-shrink-0">
-                  <img className="h-48 w-full object-cover" src={ele.image} alt="Cover Picture" />
+                  <img className="h-48 w-full object-cover" src={ele.frontmatter.image} alt="Cover Picture" />
                 </div>
                 <div className="flex-1 bg-white p-6 flex flex-col justify-between">
                   <div className="flex-1">
-                    <a href={`/blog/${ele.slug}`} className="block mt-2">
-                      <p className="text-xl font-semibold text-gray-900">{ele.title}</p>
-                      <p className="mt-3 text-base text-gray-500">{ele.description}</p>
+                    <a href={`/blog/${ele.frontmatter.slug}`} className="block mt-2">
+                      <p className="text-xl font-semibold text-gray-900">{ele.frontmatter.title}</p>
+                      <p className="mt-3 text-base text-gray-500">{ele.frontmatter.description}</p>
                     </a>
                   </div>
                   <div className="mt-6 flex items-center">
                     <div className="flex-shrink-0">
-                      <a href={ele.authorLink}>
-                        <span className="sr-only">{ele.author}</span>
-                        <img className="h-10 w-10 rounded-full" src={ele.authorImg} alt={ele.author} />
+                      <a href={ele.frontmatter.authorIn}>
+                        <span className="sr-only">{ele.frontmatter.author}</span>
+                        <img className="h-10 w-10 rounded-full" src={ele.frontmatter.authorImg} alt={ele.frontmatter.author} />
                       </a>
                     </div>
                     <div className="ml-3">
                       <p className="text-sm font-medium text-gray-900">
-                        <a href={ele.authorLink} className="hover:underline">
-                          {ele.author}
+                        <a href={ele.frontmatter.authorIn} className="hover:underline">
+                          {ele.frontmatter.author}
                         </a>
                       </p>
                       <div className="flex space-x-1 text-sm text-gray-500">
-                        <span>{ele.date}</span>
+                        <span>{ele.frontmatter.date}</span>
                         <span aria-hidden="true">&middot;</span>
                       </div>
                     </div>
@@ -57,5 +77,3 @@ function HeroSection() {
     </div>
   )
 }
-
-export default HeroSection

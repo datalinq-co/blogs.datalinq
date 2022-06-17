@@ -1,5 +1,4 @@
 import React from 'react'
-import posts from '../../blog_cms/posts.json'
 
 function PageHeader({author, authorImg, date}) {
   return (
