@@ -8,7 +8,6 @@ const dataPost = require('./data/posts.json')
 //         if(error) throw error
 //     })
 // }
-console.log(_.isEqual(posts.post,dataPost))
 
 exports.createPages = async function({actions: {createPage}, graphql}) {
     const data = await graphql(`
