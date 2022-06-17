@@ -6,47 +6,47 @@ media_folder: static/img
 public_folder: /img
 
 collections:
-  # - name: "blog_cms"
-  #   label: "Blog CMS"
-  #   files:
-  #     # - label: "Posts"
-  #     #   name: posts
-  #     #   file: blog_cms/posts.json
-  #     #   fields:
-  #     #     - label: "Post"
-  #     #       name: post
-  #     #       widget: list
-  #     #       fields:
-  #     #         - {label: "Title",name: title, widget: string}
-  #     #         - {label: "Link to",name: href, widget: string}
-  #     #         - {label: "Description",name: description, widget: string}
-  #     #         - {label: "Image",name: image, widget: image}
-  #     #         - {label: "Author",name: author, widget: string}
-  #     #         - {label: "Author Link",name: authorLink, widget: string}
-  #     #         - {label: "Author Image",name: authorImg, widget: image}
-  #     #         - {label: "Date Published",name: date, widget: string}
-  #     - label: "Site CMS"
-  #       name: site
-  #       file: blog_cms/site.json
-  #       fields:
-  #         - {label: "Title",name: title, widget: string}
-  #         - {label: "Subtitle",name: subtitle, widget: string}
-  #         - {label: "Navbar Button Text",name: navbarbtnText, widget: string}
-  #         - {label: "Navbar Button Link",name: navbarbtnLink, widget: string}
-  #         - {label: "Logo",name: logo, widget: image}
-  #         - label: "Footer Links"
-  #           name: links
-  #           widget: list
-  #           fields:
-  #             - {label: "Text",name: text,widget: string}
-  #             - {label: "Link",name: link,widget: string}
-  #         - {label: Copyright Footer, name: footerText, widget: string}
+  - name: "blog_cms"
+    label: "Blog CMS"
+    files:
+      # - label: "Posts"
+      #   name: posts
+      #   file: blog_cms/posts.json
+      #   fields:
+      #     - label: "Post"
+      #       name: post
+      #       widget: list
+      #       fields:
+      #         - {label: "Title",name: title, widget: string}
+      #         - {label: "Link to",name: href, widget: string}
+      #         - {label: "Description",name: description, widget: string}
+      #         - {label: "Image",name: image, widget: image}
+      #         - {label: "Author",name: author, widget: string}
+      #         - {label: "Author Link",name: authorLink, widget: string}
+      #         - {label: "Author Image",name: authorImg, widget: image}
+      #         - {label: "Date Published",name: date, widget: string}
+      - label: "Site CMS"
+        name: site
+        file: blog_cms/site.json
+        fields:
+          - {label: "Title",name: title, widget: string}
+          - {label: "Subtitle",name: subtitle, widget: string}
+          - {label: "Navbar Button Text",name: navbarbtnText, widget: string}
+          - {label: "Navbar Button Link",name: navbarbtnLink, widget: string}
+          - {label: "Logo",name: logo, widget: image}
+          - label: "Footer Links"
+            name: links
+            widget: list
+            fields:
+              - {label: "Text",name: text,widget: string}
+              - {label: "Link",name: link,widget: string}
+          - {label: Copyright Footer, name: footerText, widget: string}
   - name: "content"
     label: "Blog Content"
     folder: "content/posts"
     create: true
     slug: "{{year}}-{{slug}}"
-    feilds:
+    fields:
       - {label: "Title", name: "title", widget: string, required: true }
       - {label: "Description", name: "description", widget: string, required: true }
       - {label: "Blog Image", name: "image", widget: "image" }
