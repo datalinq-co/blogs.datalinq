@@ -2,8 +2,8 @@
   "title": "Datalinq Blog",
   "subtitle": ".",
   "navbarbtnText": "Contact Us",
-  "navbarbtnLink": "#",
-  "logo": "https://blog.datalinq.co/media/website/logo-2.png",
+  "navbarbtnLink": "mailto:info@datalinq.co",
+  "logo": "/img/logo-dark.png",
   "links": [
     {
       "text": "Career",
